@@ -1,0 +1,26 @@
+{
+  "name": "knex-app",
+  "version": "1.0.0",
+  "description": "Knex JS Open Project",
+  "main": "index.js",
+  "author": "SOMON Soum <somon.soum9@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts"
+  },
+  "dependencies": {
+    "@types/password-hash": "^1.2.20",
+    "apollo-server": "^2.13.1",
+    "dotenv": "^8.2.0",
+    "global": "^4.4.0",
+    "graphql": "^15.0.0",
+    "knex": "^0.21.1",
+    "moment": "^2.26.0",
+    "mysql2": "^2.1.0",
+    "password-hash": "^1.2.2",
+    "sqlite3": "^4.2.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3"
+  }
+}
