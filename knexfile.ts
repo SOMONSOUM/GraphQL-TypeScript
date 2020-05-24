@@ -1,5 +1,5 @@
 // Update with your config settings.
-import { config } from 'dotenv';
+import { config } from "dotenv";
 
 config();
 
@@ -8,9 +8,15 @@ module.exports = {
     client: "mysql2",
     connection: process.env.DATABASE,
     migrations: {
-      extension: 'ts'
+      extension: "ts",
+      tableName: "knex_migrations",
+      directory: `${__dirname}/src/database/migrations`,
     },
-    useNullAsDefault: true
+    seeds: {
+      extension: "ts",
+      directory: `${__dirname}/src/database/seeds`
+    },
+    useNullAsDefault: true,
   },
 
   staging: {
